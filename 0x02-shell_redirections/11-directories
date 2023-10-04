@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la > temp.txt >wc -l
+find . -type d -not -name |wc -l
