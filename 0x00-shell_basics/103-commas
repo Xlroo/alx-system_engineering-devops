@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a --sort=version | tr '\n' ','| sed 's/,$/\n/'
+ls -a | grep -E '^\.\.?$' | tr '\n' ',' | sed 's/,$/\n/'; ls -a | grep -vE '^\.\.?$' | sort -k1.1,1.1V | sed 's|/$|/|' | tr '\n' ',' | sed 's/,$/\n/'
