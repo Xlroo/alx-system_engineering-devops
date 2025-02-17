@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s, ' . ..; ls -a | grep -vE '^\.\.?$' | sort -k1.1,1.1V | sed 's|/$|/,|' | tr '\n' ' ' | sed 's/, $/\n/'
+ls -map|sort -d
