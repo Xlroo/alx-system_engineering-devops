@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Fca
+ls -aF --sort=version | tr '\n' ','| sed 's/,$/\n/'
