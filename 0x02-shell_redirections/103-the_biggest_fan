@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '{print $1}' | sort | uniq -c | sort -nr | head -1
+cat access.log | cut -d' ' -f1 | sort | uniq -c | sort -nr | head -1
