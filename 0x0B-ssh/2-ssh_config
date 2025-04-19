@@ -1,3 +1,5 @@
-CertificateFile
-        ~/.ssh/school
-PasswordAuthentication No
+Host 531635-web-01
+    HostName 54.89.142.178
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
