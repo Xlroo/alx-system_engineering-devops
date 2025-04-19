@@ -1,0 +1,3 @@
+CertificateFile
+        ~/.ssh/school
+PasswordAuthentication No
